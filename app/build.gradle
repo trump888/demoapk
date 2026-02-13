@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace 'com.example.haimacloudphonedemo'
-    compileSdk 33
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.example.haimacloudphonedemo"
-        minSdk 21
-        targetSdk 33
+        minSdkVersion 21
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
     }
 
     buildTypes {
@@ -35,9 +34,6 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.0'
     implementation (name: 'master-4.13.1-2f695176', ext: 'aar')
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    testImplementation 'junit:junit:4.12'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 }
