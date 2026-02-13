@@ -1,0 +1,2 @@
+rootProject.name='haimaCloudPhoneDemo'
+include ':app'
